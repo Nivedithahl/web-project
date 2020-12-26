@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house Slider</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+       body{
+        background-color: #4c433c;
+        font-family: Rockwell;
+       } 
+
+ .slides{
+    
+    margin-top: 0px;
+    padding: 0px;
+    height: 700px;
+    width: 100%;
+
+ }       
+
+.slider {
+    margin-top:0px;
+    margin-left: 25%;
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+}
+.images {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+    margin-left: -400%;
+}
+#img6:checked ~ .m6 {
+    margin-left: -500%;
+}
+#img7:checked ~ .m7 {
+    margin-left: -600%;
+}
+#img8:checked ~ .m8 {
+    margin-left: -700%;
+}
+#img9:checked ~ .m9 {
+    margin-left: -800%;
+}
+#img10:checked ~ .m10 {
+    margin-left: -900%;
+}
+#img11:checked ~ .m11 {
+    margin-left: -1000%;
+}
+#img12:checked ~ .m12 {
+    margin-left: -1100%;
+}
+#img13:checked ~ .m13 {
+    margin-left: -1200%;
+}
+.dealers{
+    box-sizing: border-box;
+    background-color: lightgray;    
+    margin-top:0px;
+    padding: 0px;
+    height: 700px;
+    width: 100%;
+
+}
+
+.contactForm{
+    margin-left:70%;
+	margin-top:-500px;
+    width: 20%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top:10px;
+}
+.contactForm .inputBox input{
+    width: 100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 40%;
+    background: #00bcd4;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.details{
+    margin-top: -20px;
+    margin-left: 100px;
+    border: 1px solid white;
+    width: 50%;
+    background-color: white;
+
+}
+.over{
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-top: -2px;
+    font-size: 20px;
+
+}
+#more{
+    display: none;
+}
+button{
+    background-color: #ff0066;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+</style>
+</head>
+<body>
+    <h2 style="color: red; margin: 70px 200px; margin-bottom: -20px;">4 BHK Independent House<span style="color: white;margin-left: 500px;"><span> &#8377</span>5.0 Cr</span></h2>
+    <h5 style="color: white;margin: 20px 200px; margin-bottom: -20px;">1435 MG Road, K.R Puram, Bangalore 573219</h5>
+
+    <section class="slides">
+       <div class="slider" >
+         <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+            <input type="radio" name="slide" id="img5">
+            <input type="radio" name="slide" id="img6">
+            <input type="radio" name="slide" id="img7">
+            <input type="radio" name="slide" id="img8">
+            <input type="radio" name="slide" id="img9">
+            <input type="radio" name="slide" id="img10">
+            <input type="radio" name="slide" id="img11">
+            <input type="radio" name="slide" id="img12">
+            <input type="radio" name="slide" id="img13">
+            
+
+            
+
+            <img src="./h11.jpg" class="m1" alt="img1">
+            <img src="./h12.jpg" class="m2" alt="img2">
+            <img src="./h13.jpg" class="m3" alt="img3">
+            <img src="./h14.jpg" class="m4" alt="img4">
+            <img src="./h15.jpg" class="m5" alt="img5">
+            <img src="./h112.jpg" class="m6" alt="img6">
+            <img src="./h10.jpg" class="m7" alt="img7">
+            <img src="./h19.jpg" class="m8" alt="img8">
+            <img src="./h17.jpg" class="m9" alt="img9">
+            <img src="./h111.jpg" class="m10" alt="img10">
+            <img src="./h113.jpg" class="m11" alt="img11">
+            <img src="./h114.jpg" class="m12" alt="img12">
+            <img src="./h115.jpg" class="m13" alt="img13">
+
+            
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+            <label for="img5"></label>
+            <label for="img6"></label>
+            <label for="img7"></label>
+            <label for="img8"></label>
+            <label for="img9"></label>
+            <label for="img10"></label>
+            <label for="img11"></label>
+            <label for="img12"></label>
+            <label for="img13"></label>
+                
+        </div>
+        <div class="desc1">
+                    <div style="color: white; text-align: center;" >
+                      <p style=" height:30px;border-right: 3px solid gray; margin:0px 650px 0px 0px ; font-size: 15px;"><span style="color: silver;">Build up area</span><br>2100 Sq.ft</p>
+                     <p style=" height:30px;border-right: 3px solid gray; margin:-30px 520px -30px 120px ;font-size: 15px;"><span style="color: silver;">Avg.Price</span><br><span> &#8377</span>14k/Sq.ft</p>
+                      <p style=" height:30px;border-right: 3px solid gray; margin:0px 400px 0px 250px;font-size: 15px;"><span style="color: silver;">Bathroom</span><br>3</p>
+                      <p style=" height:30px;border-right: 3px solid gray; margin:-30px 260px -30px 370px;font-size: 15px;"><span style="color: silver;">Furnishing</span><br>Fully-Furnished</p>
+                      <p style=" height:30px; margin:-20px 520px;font-size: 15px;"><span style="color: silver;">Availability</span><br>Immediately</p>
+                   </div>
+                </div>
+     </div>  
+ </section>  
+              <section class="dealers">
+
+                      <div class="details">
+                          <div class="over"><h1>Overview</h1></div>
+                          <div style="margin: 30px 40px;"><span style="color: gray;">Brokerage</span><br>No Charges</div>
+                          <div style="margin:-65px 400px;"><span style="color: gray;">Price</span><br><span> &#8377</span>5.0Cr</div>
+                          <div class="box" style="margin: 130px 40px;">
+                            <div class="icon" style="float: left; margin-top: 5px"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                              <div class="text">
+                               <h2 style="text-align: left; margin-bottom: 2px; font-weight: 700; color: #00bcd4;">Address</h2>
+                               <p style="text-align: left;margin-top: 2px;">1435 MG Road,<br>K.R Puram, Bangalore,<br>573219</p>
+                               </div>
+                          </div>
+                           <div style="margin:-210px 400px;"><span style="color: gray;">Bedrooms</span><br>4</div>
+                           <div style="margin:250px 400px;margin-bottom: 5px;" ><span style="color: gray;">BuildUpArea</span><br>2100sq.ft</div>
+                           <div style="margin-left:  10px;">
+                             <h1>About this property</h1>
+                              <p style="color: gray;">
+                               4 BHK Independent House for sale in K.R Puram, Bangalore, with modern-day amenities. The Independent House is in K.R Puram which is a promising investment destination in Bangalore. This might be your chance to grab the best 4 BHK property for sale in K.R Puram. This<span id="dot">.....</span><span id="more"> 4 BHK Independent House is available at a reasonable price of Rs 5.0Cr. Residents also need to pay maintenance charges of Rs 1000. The built-up area is 2100.0 Square feet. This property has provision for 3 bathrooms. It enjoys a strategic location with many reputed and multispeciality hospitals nearby like Arokia Annai Hospital & Medicals Laboratory, Arokiya Hospital, and Thalir Hospital. The city's best schools like J.S.S School, Neelan Matriculation School, and Deva Annai Matriculation Higher Secondary School are also near this housing project</span>
+                             </p>
+                             <button type="button" id="read" onclick="read()">read more</button>
+
+                             <script type="text/javascript">
+                               var i=0;
+                                 function read(){
+                                                 if(!i){
+                                                           document.getElementById("more").style.display="inline";
+                                                           document.getElementById("dot").style.display="none";
+                                                            document.getElementById("read").innerHTML="Read less";
+                                                             i=1;
+
+                                                         }
+                                                    else{
+                                                           document.getElementById("more").style.display="none";
+                                                            document.getElementById("dot").style.display="inline";
+                                                                document.getElementById("read").innerHTML="Read more";
+                                                                   i=0;
+
+                                                        }
+                                                 }
+                                </script>
+                          
+                         </div>
+                           
+
+                    
+
+
+
+                      </div>
+
+
+
+
+
+                <div class="contactForm">
+                	       <div style="box-sizing: border-box;border: 1px solid black; margin-top: -40px; margin-left: -40px; height:auto;width: 380px; background:rgb(240, 240, 240);">
+                	            <h2 style="text-align: center;">Contact dealers:</h2>
+                		        <h3 style="font-weight: bold;">Phone:<span style="color: skyblue;">+91-90*****786, +91-68****349</span></h3>
+                	            <h3 style="font-weight: bold;">Email:<span style="color: skyblue;">example@gmail.com</span></h3>
+                          </div>
+                	
+           		        <form action="send.php" method="post">
+           			         <h3 style="color: #00bcd4;">Fill the form! We'll call you back</h3>
+           			          <div class="inputBox">
+           			      	  <input type="text" name="fullname" placeholder="Full name" required="">
+           			         </div>
+           			         <div class="inputBox">
+           				     <input type="text" name="email" placeholder="Email" required="">
+           			          </div>
+           			         <div class="inputBox">
+           				   <input type="number" name="pno" placeholder="Phone no" required="">
+           			        </div>
+           			       <div class="inputBox">
+           				   <input type="submit" name="" value="send">
+           			        </div>
+           		      </form>
+                   </div>
+               </section>
+         
+
+</body>
+</html>

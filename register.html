@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+	body{
+		  margin: 0;
+		   padding: 0px;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('img.jpg');
+            background-size: cover;
+        
+        }
+	.container {
+		position: absolute;
+		font-size: 15px;
+		top: 15%;
+		left: 40%;
+        transform: translate(-10%,-10%);
+        width: 400px;
+        height: 650px;
+        padding: 10px 40px;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0,.6);
+        }
+     .container input{
+     	width: 90%;
+     }
+     .container input[type="text"],
+     .container input[type="text"],
+     .container input[type="text"],
+     .container input[type="password"],
+     .container input[type="integer"]
+     {
+     	    order: none;
+            border-bottom: 2x solid #fff;
+            background: transparent;
+            outline: none;
+            margin: 5%;
+            height: 30px;
+            color: #fff;
+            font-size: 20px;
+     }
+     .container p{
+     	margin: 0;
+     	padding: 5px;
+     	font-weight: bold;
+     	color: #fff;
+     }
+     .container button[type="submit"]
+     {
+     
+            position: center;
+            height: 40px;
+            width: 100%;
+            color: #fff;
+            font-size:20px;
+            background: red;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin-top: 5%;
+        }
+
+     }
+
+</style>
+</head>
+<body>
+<div class="container">
+<h2 style="color: white; text-align: center;">Create Your Account</h2>
+<form action="register.php" method="post">
+<input type="text" name="fname" placeholder="First name" required="" >
+<input type="text" name="lname" placeholder="Last name" required="">
+<input type="text" name="email" placeholder="Enter email" required="">
+<input type="password" name="password" placeholder="Enter password" required="" >
+<input type="password" name="rpassword" placeholder=" Re-Enter password" required="">
+<input type="integer" name="pno" placeholder="Enter phone no" required="integer">
+<button type="submit">Sign Up</button>
+<p style="padding: 10px; font-size: 15px;">already have account?<a href="home1.html#login" style="color: skyblue"> Sign-In here</a></p>
+</form>
+</div>
+</body>
+</html>
